@@ -24,6 +24,7 @@ function require(id) {
 	return ({
 		vue: Vue,
 		'vue-template-compiler': vueTemplateCompiler,
+		'@vue/test-utils': { config: {} },
 	})[id];
 }
 const module = {

@@ -2,7 +2,6 @@
   "name": "@whisthub/vue-test-utils",
   "version": "0.0.1",
   "type": "module",
-  "public": true,
   "description": "A modified @vue/test-utils to work with Vue 2.7 and esm",
   "exports": {
     ".": "./dist/vue-test-utils.js"
@@ -29,7 +28,7 @@
   },
   "homepage": "https://github.com/whisthub/vue-test-utils#readme",
   "devDependencies": {
-    "@vue/test-utils": "^1.1.2",
+    "@vue/test-utils": "1.0.3",
     "jsdom": "^20.0.0",
     "jsdom-global": "^3.0.2",
     "mocha": "^10.0.0",

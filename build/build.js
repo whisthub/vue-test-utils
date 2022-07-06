@@ -45,3 +45,10 @@ if (!fs.existsSync(dist)) {
 }
 const outputPath = path.join(dist, 'vue-test-utils.js');
 fs.writeFileSync(outputPath, src);
+
+// Update the version to match the @vue/test-utils version.
+const { version } = require('@vue/test-utils/package.json');
+const pkg = require('@whisthub/vue-test-utils/package.json');
+const pkgPath = require.resolve('@whisthub/vue-test-utils/package.json');
+pkg.version = version;
+fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2)+'\n');

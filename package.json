@@ -1,0 +1,41 @@
+{
+  "name": "@whisthub/vue-test-utils",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "A modified @vue/test-utils to work with Vue 2.7 and esm",
+  "exports": {
+    ".": "./dist/vue-test-utils.js"
+  },
+  "scripts": {
+    "prepublish": "npm test",
+    "build": "node build/build.js",
+    "pretest": "npm run build",
+    "test": "mocha test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whisthub/vue-test-utils.git"
+  },
+  "keywords": [
+    "vue",
+    "vue-test-utils",
+    "esm"
+  ],
+  "author": "Sebastiaan Marynissen <sebastiaan@whisthub.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whisthub/vue-test-utils/issues"
+  },
+  "homepage": "https://github.com/whisthub/vue-test-utils#readme",
+  "devDependencies": {
+    "@vue/test-utils": "^1.1.2",
+    "jsdom": "^20.0.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^10.0.0",
+    "vue": "^2.7.2",
+    "vue-template-compiler": "^2.7.2"
+  },
+  "files": [
+    "dist/vue-test-utils.js"
+  ]
+}

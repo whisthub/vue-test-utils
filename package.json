@@ -1,6 +1,6 @@
 {
   "name": "@whisthub/vue-test-utils",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "type": "module",
   "description": "A modified @vue/test-utils to work with Vue 2.7 and esm",
   "exports": {
